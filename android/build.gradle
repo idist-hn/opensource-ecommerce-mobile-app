@@ -8,11 +8,10 @@ buildscript {
 
     dependencies {
         classpath 'com.google.gms:google-services:4.4.2'
-        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath 'com.android.tools.build:gradle:8.6.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-
 allprojects {
     repositories {
         google()
@@ -22,6 +21,15 @@ allprojects {
 
 rootProject.buildDir = '../build'
 subprojects {
+//    afterEvaluate { project ->
+//        if (project.hasProperty('android')) {
+//            project.android {
+//                if (namespace == null) {
+//                    namespace project.group
+//                }
+//            }
+//        }
+//    }
     project.buildDir = "${rootProject.buildDir}/${project.name}"
     project.evaluationDependsOn(':app')
 }
