@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Bagisto 2 Flutter Mobile App</string>
+	<string>Ecommerce CIE</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,25 +22,25 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>192.168.15.204</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>http</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>For uploading profile image</string>
-	<key>CFBundleURLTypes</key>
-    	<array>
-    		<dict>
-    		    <key>CFBundleTypeRole</key>
-            	<string>Editor</string>
-    			<key>CFBundleURLName</key>
-    			<string>192.168.15.204</string>
-    			<key>CFBundleURLSchemes</key>
-    			<array>
-    				<string>http</string>
-    			</array>
-    		</dict>
-    	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>For recognise voice phrases to search products</string>
 	<key>NSPhotoLibraryUsageDescription</key>

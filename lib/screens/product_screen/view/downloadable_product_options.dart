@@ -9,9 +9,9 @@
  */
 
 import 'package:bagisto_app_demo/utils/application_localization.dart';
-import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:carousel_slider/carousel_controller.dart';
+import 'package:flutter/material.dart';
 import '../../../utils/check_box_group.dart';
 import '../../../utils/string_constants.dart';
 import '../../home_page/data_model/new_product_data.dart';
@@ -31,7 +31,7 @@ class DownloadProductOptions extends StatefulWidget {
 }
 
 class _DownloadProductOptionsState extends State<DownloadProductOptions> {
-  final buttonCarouselController = CarouselController();
+  final buttonCarouselController = CarouselSliderController();
   List<String> selected = [];
 
   @override

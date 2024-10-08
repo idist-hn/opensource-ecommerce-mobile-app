@@ -13,7 +13,6 @@ import 'package:bagisto_app_demo/screens/cart_screen/cart_index.dart';
 import 'package:bagisto_app_demo/screens/product_screen/view/file_download.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:carousel_slider/carousel_controller.dart';
-
 import '../../home_page/data_model/new_product_data.dart';
 
 
@@ -32,7 +31,7 @@ class DownloadProductSample extends StatefulWidget {
 }
 
 class _DownloadProductSampleState extends State<DownloadProductSample> {
-  final buttonCarouselController = CarouselController();
+  final buttonCarouselController = CarouselSliderController();
 
   @override
   void initState() {

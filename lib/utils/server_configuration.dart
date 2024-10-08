@@ -5,7 +5,7 @@ const int defaultSplashDelay = 3;
 
 
 // local instance bagisto 2.0 updated
-const String baseUrl = "";
+const String baseUrl = "https://ecommerce.dtqt.edu.vn";
 
 const String defaultWebsiteId = "1";
 

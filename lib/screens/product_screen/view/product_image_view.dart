@@ -38,7 +38,7 @@ class ProductImageView extends StatefulWidget {
 }
 
 class ProductImageViewState extends State<ProductImageView> {
-  final buttonCarouselController = CarouselController();
+  final carouselController = CarouselSliderController();
   int? _current = 0;
 
   @override
@@ -60,7 +60,7 @@ class ProductImageViewState extends State<ProductImageView> {
                           ZoomImageView(imgList: widget.productData?.images)));
             },
             child: (widget.imgList ?? []).isNotEmpty ? CarouselSlider(
-              carouselController: buttonCarouselController,
+              carouselController: carouselController,
               options: CarouselOptions(
                   autoPlay: false,
                   enlargeCenterPage: true,
@@ -99,12 +99,12 @@ class ProductImageViewState extends State<ProductImageView> {
               children: (widget.imgList ?? []).map((url) {
                 int? index = widget.imgList?.indexOf(url);
                 return GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        _current = index;
-                        buttonCarouselController.jumpToPage(_current ?? 0);
-                      });
-                    },
+                    // onTap: () {
+                    //   setState(() {
+                    //     _current = index;
+                    //     buttonCarouselController.jumpToPage(_current ?? 0);
+                    //   });
+                    // },
                     child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(

@@ -4,7 +4,7 @@ import GoogleMaps
 import Firebase
 import QuickLook
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate, MessagingDelegate {
     private var _latestLink: String?
     private var latestLink: String? {
